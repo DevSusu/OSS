@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/username"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/name"
+        android:textSize="20sp" />
+
+	<EditText
+	    android:id="@+id/usernametext"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:ems="10"
+	    android:width="250dp" />
+
+	<ImageView
+	    android:src="@drawable/age"
+	    android:layout_gravity="center"
+	    android:id="@+id/userage"
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"
+	    android:textSize="20sp" />
+
+	<EditText
+	    android:id="@+id/useragetext"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:ems="10"
+	    android:inputType="number"
+	    android:width="250dp" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+	    <CheckBox
+	        android:id="@+id/checkboxmale"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal" />
+	    
+	    <ImageView 
+	        android:src="@drawable/male"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp" />
+
+	    <CheckBox
+	        android:layout_marginLeft="20dp"
+	        android:id="@+id/checkboxfemale"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <ImageView 
+	        android:src="@drawable/female"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        />
+	</LinearLayout>
+
+	<ImageView
+	    android:id="@+id/usersavebutton"
+	    android:src="@drawable/save"
+	    android:layout_gravity="right"
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginRight="20dp" />
+
+</LinearLayout>

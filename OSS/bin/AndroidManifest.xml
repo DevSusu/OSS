@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oss"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:allowTaskReparenting="true">
+        <activity android:name="com.activity.main.FreeActivity" android:theme="@style/notitletheme" android:label="free"></activity>
+        <activity android:name="com.activity.main.LoadingActivity" android:theme="@style/notitletheme" android:label="loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.activity.main.GradeActivity" android:theme="@style/notitletheme" android:label="grade"></activity>
+        <activity android:name="com.activity.main.UserActivity" android:theme="@style/notitletheme" android:label="user"></activity>
+        <activity android:name="com.activity.main.AnalyseActivity" android:theme="@style/notitletheme" android:label="info"></activity>
+        <activity android:name="com.activity.main.InfoActivity" android:theme="@style/notitletheme" android:label="info"></activity>
+        <activity android:name="com.activity.main.MenuActivity" android:theme="@style/notitletheme" android:label="menu"></activity>
+        <activity android:name="com.activity.main.ExplainActivity" android:theme="@style/notitletheme" android:label="explain"></activity>
+    </application>
+
+</manifest>
